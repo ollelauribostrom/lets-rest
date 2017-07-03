@@ -12,6 +12,7 @@ Forked/inspired by/built on [express-es6-rest-api](https://github.com/developit/
 - Linting via [ESLint](http://eslint.org/) (airbnb style guide)
 - Tests via [mocha](https://mochajs.org), [chai](http://chaijs.com/), [nyc](https://github.com/istanbuljs/nyc)
 - Hook on whatever database you like!
+- Docker support & easily published using [now](https://zeit.co/now)
 
 Getting Started
 ---------------
@@ -62,15 +63,22 @@ docker run -p 8080:8080 es6/api-service
 Publish to now
 --------------
 ```sh
-# install now global
-npm install now -g
 cd lets-rest
-now --docker OR now --npm
-wait a bit
---> visit url
+
+# install now globally
+npm install now -g
+
+# publish (--docker for dockerfile, --npm for package.json)
+now --docker
+
+# wait a bit..
+# visit url
 ```
 
-DEMO: 
+It's really as simple as that. If you haven't used now before, you will be asked to confirm 
+your email. DEMO: https://lets-rest-pdhiuckpip.now.sh/api/v1
+
+> Read more about [now](https://zeit.co/now)
 
 License
 -------
