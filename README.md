@@ -12,7 +12,8 @@ Forked/inspired by/built on [express-es6-rest-api](https://github.com/developit/
 - Linting via [ESLint](http://eslint.org/) (airbnb style guide)
 - Tests via [mocha](https://mochajs.org), [chai](http://chaijs.com/), [nyc](https://github.com/istanbuljs/nyc)
 - Hook on whatever database you like!
-- Docker support & easily published using [now](https://zeit.co/now)
+
+> ALSO: Docker support & easily published using [now](https://zeit.co/now)
 
 Getting Started
 ---------------
@@ -38,7 +39,7 @@ Commands
 - `npm start`: Build and run project from /dist folder as in production
 - `npm test`: Run tests
 - `npm run coverage`: Run test coverage using nyc, outputs report to /test/coverage
-- `npm run lint`: Run eslint on /src + / test
+- `npm run lint`: Run eslint
 
 
 Docker Support
