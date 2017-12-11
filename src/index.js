@@ -1,7 +1,3 @@
-/**
- * API entry point
- **/
-
 import express from 'express';
 import bodyParser from 'body-parser';
 import helmet from 'helmet';
@@ -13,6 +9,7 @@ import { initializeDb } from './lib';
 
 const app = express();
 
+/* istanbul ignore next */
 if (process.env.NODE_ENV === 'production') {
   app.enable('trust proxy');
 }

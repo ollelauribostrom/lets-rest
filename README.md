@@ -19,8 +19,9 @@ Getting Started
 ---------------
 ```sh
 # clone it
-git clone git@github.com:ollelauribostrom/lets-rest.git
-cd lets-rest
+mkdir my-api
+cd my-api
+git clone git@github.com:ollelauribostrom/lets-rest.git .
 
 # Make it your own
 rm -rf .git && git init && npm init
@@ -45,7 +46,7 @@ Commands
 Docker Support
 ------
 ```sh
-cd lets-rest
+cd my-api
 
 # Build your docker
 docker build -t es6/api-service .
@@ -64,7 +65,7 @@ docker run -p 8080:8080 es6/api-service
 Publish to now
 --------------
 ```sh
-cd lets-rest
+cd my-api
 
 # install now globally
 npm install now -g

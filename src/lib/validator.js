@@ -6,7 +6,7 @@ import ApiError from './ApiError';
  * req.body must contain todo: { task }
  */
 export function validateTodo(req, res, next) {
-  const todo = req.body.todo;
+  const { todo } = req.body;
 
   if (!todo) {
     return next(new ApiError({
