@@ -1,4 +1,6 @@
 # Lets REST! - ES6 RESTful Express API boilerplate
+[![Coverage Status](https://coveralls.io/repos/github/ollelauribostrom/lets-rest/badge.svg?branch=master)](https://coveralls.io/github/ollelauribostrom/lets-rest?branch=master)
+[![Known Vulnerabilities](https://snyk.io/test/github/ollelauribostrom/lets-rest/badge.svg)](https://snyk.io/test/github/ollelauribostrom/lets-rest)
 
 This is a simple boilerplate for quickly setting up a REST API with ES6 and Express + tests.
 Forked/inspired by/built on [express-es6-rest-api](https://github.com/developit/express-es6-rest-api)
@@ -40,6 +42,7 @@ Commands
 - `npm start`: Build and run project from /dist folder as in production
 - `npm test`: Run tests
 - `npm run coverage`: Run test coverage using nyc, outputs report to /test/coverage
+- `npm run coveralls`: Run test coverage using nyc & send report to coveralls (must have specified repo_token in .coveralls.yml)
 - `npm run lint`: Run eslint
 
 

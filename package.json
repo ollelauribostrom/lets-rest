@@ -10,6 +10,7 @@
     "prestart": "npm run -s build",
     "test": "mocha --timeout 10000 --require babel-core/register",
     "coverage": "nyc --temp-directory ./test/coverage/tmp mocha --timeout 10000 --require babel-core/register",
+    "coveralls": "nyc report --temp-directory ./test/coverage/tmp mocha --timeout 10000 --require babel-core/register --reporter=text-lcov | coveralls",
     "lint": "eslint src test --ignore-pattern test/coverage*"
   },
   "repository": {
@@ -44,6 +45,7 @@
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "chai-http": "^3.0.0",
+    "coveralls": "^3.0.0",
     "eslint": "^4.13.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
