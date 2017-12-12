@@ -14,5 +14,5 @@ export default function ({ dbAddress }, cb) {
       cb(db);
     */
 
-  cb();
+  return cb();
 }
